@@ -5,32 +5,32 @@ import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name="Personas", schema = "public")
+@Table(name="personas", schema = "public")
 public class PersonEntity {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name="Identificador")
+    @Column(name="identificador")
     private long identificador;
 
-    @Column(name="Apellidos")
+    @Column(name="apellidos")
     private String apellidos;
 
-    @Column(name="Email")
+    @Column(name="email")
     private String email;
 
     @Temporal(TemporalType.DATE)
-    @Column(name="Fecha_creacion")
+    @Column(name="fecha_creacion")
     private Date fechaCreacion;
 
 
-    @Column(name="Nombres")
+    @Column(name="nombres")
     private String nombres;
 
-    @Column(name="Numero_identificacion")
+    @Column(name="numero_identificacion")
     private String numeroIdentificacion;
 
-    @Column(name="Tipo_identificacion")
+    @Column(name="tipo_identificacion")
     private String tipoIdentificacion;
 
     public PersonEntity(long identificador, String apellidos, String email, Date fechaCreacion, String nombres, String numeroIdentificacion, String tipoIdentificacion) {
