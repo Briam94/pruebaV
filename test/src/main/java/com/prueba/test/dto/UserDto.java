@@ -1,12 +1,13 @@
 package com.prueba.test.dto;
 
-public class LoginDto {
+import jakarta.persistence.Column;
 
+public class UserDto {
     private String user;
 
     private String password;
 
-    public LoginDto(String user, String password) {
+    public UserDto(String user, String password) {
         this.user = user;
         this.password = password;
     }

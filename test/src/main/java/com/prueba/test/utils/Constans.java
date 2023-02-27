@@ -4,6 +4,7 @@ public class Constans {
 
     public static final String PERSONS = "/persons";
     public static final String FIND_ALL_PERSON = "/findAllPerson";
+    public static final String LOGIN = "/login";
     public static final String ADD_PERSON = "/addPerson";
     public static final String USERS = "/users";
     public static final String ADD_USER = "/addUser";

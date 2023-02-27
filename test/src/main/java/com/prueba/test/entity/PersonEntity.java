@@ -33,7 +33,7 @@ public class PersonEntity {
     @Column(name="tipo_identificacion")
     private String tipoIdentificacion;
 
-    public PersonEntity(long identificador, String apellidos, String email, Date fechaCreacion, String nombres, String numeroIdentificacion, String tipoIdentificacion) {
+    public PersonEntity(Long identificador, String apellidos, String email, Date fechaCreacion, String nombres, String numeroIdentificacion, String tipoIdentificacion) {
         this.identificador = identificador;
         this.apellidos = apellidos;
         this.email = email;

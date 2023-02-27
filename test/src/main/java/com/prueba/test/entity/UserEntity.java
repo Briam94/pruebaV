@@ -6,26 +6,26 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name="Usuario", schema = "public")
+@Table(name="usuario", schema = "public")
 public class UserEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name="Identificador")
+    @Column(name="identificador")
     private Integer identificador;
     @Temporal(TemporalType.DATE)
     @Column(name="fecha_creacion")
     private Date fechaCreacion;
 
 
-    @Column(name="Pass")
+    @Column(name="pass")
     private String pass;
 
-    @Column(name="Usuario")
+    @Column(name="usuario")
     private String usuario;
 
-    public UserEntity(Date fechaCreacion, Integer identificador, String pass,
+    public UserEntity(Integer identificador, Date fechaCreacion, String pass,
                       String usuario) {
         this.fechaCreacion = fechaCreacion;
         this.identificador = identificador;
